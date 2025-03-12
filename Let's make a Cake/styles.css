@@ -41,11 +41,52 @@ ul.grid li {
 }
 
 .scared:hover {
-    animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
 }
 
-@keyframes shake {
+/* @keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+} */
+
+.excited:hover {
+    animation: jump 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
 }
+
+/* @keyframes jump {
+    0% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -10px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 10px, 0);
+    }
+} */
+
+/* @keyframes jump {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+} */
