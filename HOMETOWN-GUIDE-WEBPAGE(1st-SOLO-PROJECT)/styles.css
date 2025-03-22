@@ -17,7 +17,7 @@ body {
 }
 
 .hero {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     margin: 0;
     background-image: url('https://wallpapers.com/images/hd/hyderabad-sagar-lake-night-view-shux6dqzbwv2w740.jpg');
     background-size: cover;
@@ -30,21 +30,25 @@ body {
     align-items: center;
 }
 
+.title:hover {
+    letter-spacing: 10px;
+}
+
 .title {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0px;
     color: whitesmoke;
     font-size: 6em;
 }
 
 .description {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     font-size: 1.2em;
     color: whitesmoke;
 }
 
 .activities {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -53,16 +57,42 @@ body {
 }
 
 .activity-title {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     font-size: 2em;
     color: #222222;
     text-shadow: 0px 0px 5px grey;
+    margin-bottom: 110px;
+}
+
+.activity-img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 200px;
 }
 
 .activity-img img {
     border: 2px solid yellow;
+    width: 300px;
+
+}
+
+.guide-info-card {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border: 20px solid burlywood;
+}
+
+.avatar {
     width: 500px;
-    
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 
