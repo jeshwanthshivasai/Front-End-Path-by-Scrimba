@@ -54,6 +54,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: peachpuff;
 }
 
 .activity-title {
@@ -61,7 +62,7 @@ body {
     font-size: 2em;
     color: #222222;
     text-shadow: 0px 0px 5px grey;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 
 .activity-img {
@@ -69,13 +70,30 @@ body {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
 }
 
 .activity-img img {
     border: 2px solid yellow;
     width: 300px;
+    list-style: none;
+}
 
+.one, .two, .three {
+    list-style: none;
+    /* border: 2px solid red; */
+}
+
+
+.activity-img h4, p {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.place-title {
+    font-size: 1.2em;
 }
 
 .guide-info-card {
