@@ -1,5 +1,8 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -7,10 +10,20 @@
             <div class="home">
                 <h3>HOME</h3>
                 <p id="score-home"></p>
+                <div class="buttons">
+                    <p onclick="hone()" id="hone">+1</p>
+                    <p onclick="htwo()" id="htwo">+2</p>
+                    <p onclick="hthree()" id="hthree">+3</p>
+                </div>
             </div>
             <div class="guest">
                 <h3>GUEST</h3>
                 <p id="score-guest"></p>
+                <div class="buttons">
+                    <p onclick="gone()" id="gone">+1</p>
+                    <p onclick="gtwo()" id="gtwo">+2</p>
+                    <p onclick="gthree()" id="gthree">+3</p>
+                </div>
             </div>
         </div>
         <script src="index.js"></script>
