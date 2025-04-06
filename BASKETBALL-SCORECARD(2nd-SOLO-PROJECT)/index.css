@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(27, 36, 74, 1);
+    color: white;
+}
+
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
