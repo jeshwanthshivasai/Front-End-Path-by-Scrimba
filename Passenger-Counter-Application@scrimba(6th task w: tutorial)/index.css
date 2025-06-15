@@ -1,0 +1,69 @@
+body {
+    background-image: url("https://media.istockphoto.com/id/1194091335/photo/india-maharashtra-prospective-image-of-two-indian-train-with-rail-between-them-with-gloomy.jpg?s=612x612&w=0&k=20&c=4VcaDEkW58CYGuGbmPm4ZGGeb2HO5K1y_heU3AG_EUU=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#count {
+    background: whitesmoke;
+    padding: 40px;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+#increment-btn {
+    background: darkred;
+}
+
+#increment-btn:hover{
+    background: whitesmoke;
+    color: darkred;
+}
+
+#save-btn {
+    background: darkgreen;
+}
+
+#save-btn:hover {
+    background: whitesmoke;
+    color: darkgreen;
+}
+
+p {
+    color: black;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
