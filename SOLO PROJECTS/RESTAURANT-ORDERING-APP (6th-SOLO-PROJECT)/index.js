@@ -17,5 +17,5 @@ const menuItems = (menuArray) => {
     }).join('')
 } 
 
-document.getElementById('content-menu').innerHTML = menuItems(menuArray)
+document.getElementById('menu-container').innerHTML = menuItems(menuArray)
 // console.log(menuItems(menuArray));

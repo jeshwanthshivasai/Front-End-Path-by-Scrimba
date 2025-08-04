@@ -1,9 +1,23 @@
 body {
     margin: 0;
-    font-family: "Smythe", system-ui;
     /* text-align: center; */
-} 
+}
 
-#header {
-    max-height: 150px;
+#container {
+    max-width: 600px;
+    font-family: "Smythe", system-ui;
+}
+
+header {
+    height: 150px;
+    border: 2px solid;
+}
+
+#h-img {
+    height: 150px;
+    object-fit: cover;
+}
+
+#menu-container {
+    border: 2px solid;
 }
