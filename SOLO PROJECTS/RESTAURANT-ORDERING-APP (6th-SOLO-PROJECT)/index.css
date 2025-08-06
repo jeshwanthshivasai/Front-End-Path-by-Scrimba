@@ -4,17 +4,26 @@ body {
 }
 
 #container {
-    max-width: 600px;
+    max-width: 400px;
     font-family: "Smythe", system-ui;
 }
 
 header {
-    height: 150px;
-    border: 2px solid;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    border: 2px solid blue;
+    position: relative;
+}
+
+#header-text {
+    display: flex;
+    z-index: 1;
+    position: absolute;
 }
 
 #h-img {
-    height: 150px;
+    height: 200px;
     object-fit: cover;
 }
 
