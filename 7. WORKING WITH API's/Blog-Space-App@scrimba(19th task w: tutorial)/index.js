@@ -1,18 +1,57 @@
-/**
- Challenge:
- 
- GET a list of blog posts from the JSON Placeholder API.
- 
- BaseURL: https://apis.scrimba.com/jsonplaceholder/
- Endpoint: /posts
- 
- Since there's so many posts, let's limit the array to just 5 items.
- You can use the `.slice()` array method to just grab the first 5 objects
- from the data array that comes back from the API
- 
- Log the 5 items to the console
- */
+const form = document.getElementById('new-blog')
+const postEl = document.getElementById('post-title')
+const bodyEl = document.getElementById('post-body')
+let blogsArray = []
+
+function renderPosts() {
+    let html = ""
+    blogsArray.forEach(post => {
+        html += `
+        <h3>${post.title}</h3>
+        <p>${post.body}</p>
+        <hr />
+    `
+    })
+    document.getElementById('blogs-list').innerHTML = html
+}
 
 fetch('https://apis.scrimba.com/jsonplaceholder/posts')
-.then(res => res.json())
-.then(data => console.log(data.slice(1, 6)))
+    .then(res => res.json())
+    .then(data => {
+        blogsArray = data
+        // blogsArray = data.slice(0, 5)
+        renderPosts()
+    })
+    
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const postTitle = postEl.value.trim()
+    const postBody = bodyEl.value.trim()
+
+    if(!postTitle || !postBody) {
+        alert('enter something you fool!')
+        return
+    }
+
+    const data = {
+        title: postTitle,
+        body: postBody
+    }
+    fetch('https://apis.scrimba.com/jsonplaceholder/posts', {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+        blogsArray.unshift(data)
+        renderPosts()
+        postEl.value = ""
+        bodyEl.value = ""
+    })
+})
+
+
+
