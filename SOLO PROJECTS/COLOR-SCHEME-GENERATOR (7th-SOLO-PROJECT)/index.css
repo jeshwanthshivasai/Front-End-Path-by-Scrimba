@@ -5,7 +5,7 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#main {
+#color-dropdown {
     display: flex;
     background-color: #1F2937;
     padding: 2rem;
@@ -46,7 +46,7 @@ html, body {
     color: #FFFFFF;
 }
 
-#colors {
+#color-schemes {
     /* border: 2px solid red; */
     display: flex;
     align-items: stretch;
@@ -60,7 +60,7 @@ html, body {
     height: 50rem;
 }
 
-#shades {
+#color-hex-codes {
     /* border: 2px solid blue; */
     display: flex;
     align-items: stretch;
