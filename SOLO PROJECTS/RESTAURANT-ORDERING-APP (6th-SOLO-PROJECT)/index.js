@@ -8,9 +8,9 @@ const menuItems = (menuArray) => {
                 <div id="item">
                     <span id="emoji">${menu.emoji}</span>
                     <div id="info">
-                        <h2>${menu.name}</h2>
-                        <p>${menu.ingredients}</p>
-                        <h3>$${menu.price}</h3>
+                        <h2 id="name">${menu.name}</h2>
+                        <p id="ingredients">${menu.ingredients.join(', ')}</p>
+                        <h3 id="price">$${menu.price}</h3>
                     </div>
                 </div>
                 <button id="add-btn" type="button">+</button>

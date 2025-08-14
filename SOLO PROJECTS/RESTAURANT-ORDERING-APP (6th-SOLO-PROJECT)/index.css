@@ -24,6 +24,7 @@ header {
     /* border: 2px solid red; */
     z-index: 1;
     position: absolute;
+    margin-top: 0;
 }
 
 #h-img {
@@ -32,12 +33,13 @@ header {
 }
 
 #menu-container {
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     width: 30rem;
 }
 
 #card {
     display: flex;
+    justify-content: space-between;
     padding: 10px 20px;
 }
 
@@ -45,18 +47,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    border: 1px solid red;
+    gap: 20px;
+    /* border: 1px solid red; */
 }
 
 #emoji {
-    
+    font-size: 60px;
 }
 
 #info {
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    /* border: 1px solid yellow; */
+    margin: 0;
 }
 
 #add-btn {
@@ -77,4 +80,8 @@ header {
 #line {
     width: 25rem;
     color: lightgray;
+}
+
+#ingredients {
+    margin: 2px 0;
 }
