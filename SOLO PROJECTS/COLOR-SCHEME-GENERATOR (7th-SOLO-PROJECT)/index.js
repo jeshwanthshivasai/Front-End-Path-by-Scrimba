@@ -32,11 +32,4 @@ const getColorScheme = (colorScheme) => {
     })
 }
 
-console.log(colorDropdown.value)
 getBtn.addEventListener('click', getColorSchemes)
-console.log(colorDropdown)
-
-
-
-    // colorDropdown.innerHTML = ''
-    // console.log(colorDropdown)
