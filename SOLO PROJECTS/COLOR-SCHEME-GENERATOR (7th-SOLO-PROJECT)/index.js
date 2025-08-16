@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', getColorSchemes)
 
 //to take input from colorpicker and generate hex code in console
 let colorPicker = colorPickerEl.addEventListener('change', () => {
-    const selectedColor = colorPickerEl.valueß
+    const selectedColor = colorPickerEl.value
 })
 
 //fetches color schemes from the color api
