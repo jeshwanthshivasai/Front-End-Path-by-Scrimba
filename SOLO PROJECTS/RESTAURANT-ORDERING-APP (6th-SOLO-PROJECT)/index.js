@@ -1,11 +1,8 @@
 import menuArray from "./data.js";
 //cart is for storing the added items from menu to cart which is initialised to an empty 'array'
 let cart = []
-//total is for the sum of the total price for the items inside the cart which is initialised to 'zero'
-// let total = 0
 
 //retrieve all the main components in HTML in JS
-// const addBtnEl = document.querySelectorAll('.add-btn')
 const menuContainerEl = document.getElementById('menu-container')
 const cartContainerEl = document.getElementById('cart-container')
 const detailsModalEl = document.getElementById('details-modal')
