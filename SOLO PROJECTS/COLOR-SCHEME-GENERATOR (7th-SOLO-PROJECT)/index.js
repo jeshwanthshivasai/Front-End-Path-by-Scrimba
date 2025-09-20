@@ -1,7 +1,6 @@
 let colorPickerEl = document.getElementById('color-picker')
 let colorDropdownEl = document.getElementById('color-dropdown')
 let colorSchemesEl = document.getElementById('color-schemes')
-let colorHexCodesEl = document.getElementById('color-hex-codes')
 let getBtnEl = document.getElementById('get-btn')
 
 //fetch the color modes on page load by attaching a even listener to the window and
