@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    font-family: Inter;
+    width: 550px;
+    border: 2px solid ;
+}
+/*------------------------------------------------------------------------------------------*/
+header {
+    background: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 55px;
+}
+
+header > img {
+    width: 24px;
+    margin-right: 7px;
+}
+
+header > h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+/*------------------------------------------------------------------------------------------*/
+.entry {
+    display: flex;
+    padding: 40px;
+}
+/*------------------------------------------------------------------------------------------*/
+.img-container {
+    /* border: 2px solid red; */
+    width: 125px;
+    height: 168px;
+}
+
+.entry-img {
+    width: 125px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*------------------------------------------------------------------------------------------*/
+.entry-content {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+    margin-left: 20px;
+    justify-content: center;
+}
+/*--------------------------------------------------------*/
+.entry-content-line1 {
+    display: flex;
+    align-items: center;
+    justify-content: c;
+}
+
+.marker, .country-name, .maps-link {
+    margin: 0;
+    /* border: 1px solid; */
+}
+
+.marker {
+    height: 10px;
+    margin-right: 5px;
+    /* width: 7px; */
+}
+
+.country-name {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 12px;
+}
+
+.maps-link {
+    align-self: center;
+    font-size: 10px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: #918E9B;
+}
+/*--------------------------------------------------------*/
+.place-name {
+    margin: 5px 0 15px;
+}
+/*--------------------------------------------------------*/
+.dates {
+    margin: 0 0 10px;
+    font-size: 0.8rem;
+}
+/*--------------------------------------------------------*/
+.place-text {
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 20px;
+}
+/*------------------------------------------------------------------------------------------*/
