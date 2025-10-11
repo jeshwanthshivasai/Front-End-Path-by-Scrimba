@@ -14,7 +14,7 @@
  *   this data into the component.
  */
 
-export default function Entry() {
+export default function Entry({img, title, country, googleMapsLink, dates, text}) {
     return (
         <>
             <div className="entry">
