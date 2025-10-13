@@ -12,22 +12,12 @@ import data from "./data"
  */
 
 export default function App() {
-    const entryElements = data.map((data) => {
+    const entryElements = data.map((entry) => {
         return (
             <Entry
-                    img=
-                    {
-                        { 
-                            src: data.img.src,
-                            alt: data.img.alt 
-                        }
-                    }
-                    title={data.title}
-                    country={data.country}
-                    googleMapsLink={data.googleMapsLink}
-                    dates={data.dates}
-                    text={data.text}
-                />
+                key={entry.id}
+                entry={entry}
+            />
         )
     })
     return (
