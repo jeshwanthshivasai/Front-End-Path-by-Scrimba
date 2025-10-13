@@ -14,22 +14,23 @@
  *   this data into the component.
  */
 
-export default function Entry({img, title, country, googleMapsLink, dates, text}) {
+export default function Entry(props) {
     return (
         <>
             <div className="entry">
                 <div className="img-container">
-                    <img className="entry-img" src="https://scrimba.com/links/travel-journal-japan-image-url" />
+                    <p>{props.id}</p>
+                    <img className="entry-img" src={props.img.src} alt={props.img.alt}/>
                 </div>
                 <div className="entry-content">
                     <div className="entry-content-line1">
                         <img className="marker" src="./images/marker.png" />
-                        <p className="country-name">Japan</p>
-                        <a className="maps-link" href="https://www.google.com/maps/place/Mount+Fuji/@35.3606421,138.7170637,15z/data=!3m1!4b1!4m6!3m5!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634!16zL20vMGNrczA?entry=ttu">View on Google Maps</a>
+                        <p className="country-name">{props.country}</p>
+                        <a className="maps-link" href={props.googleMapsLink} >View on Google Maps</a>
                     </div>
-                    <h2 className="place-name">Mount Fuji</h2>
-                    <h5 className="dates">12 Jan, 2021 - 24 Jan, 2021</h5>
-                    <p className="place-text">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+                    <h2 className="place-name">{props.title}</h2>
+                    <h5 className="dates">{props.dates}</h5>
+                    <p className="place-text">{props.text}</p>
                 </div>
             </div>
         </>
